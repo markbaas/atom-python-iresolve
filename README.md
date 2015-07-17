@@ -5,7 +5,7 @@ Uses [iresolve](https://github.com/markbaas/python-iresolve) to find unresolved 
 
 ### Install
 
-Make sure to have [iresolve](https://github.com/markbaas/python-iresolve) installed. [iresolve](https://github.com/markbaas/python-iresolve) can be installed running `pip install iresolve`
+Make sure to have [iresolve](https://github.com/markbaas/python-iresolve) installed. Install it by running `pip install iresolve`
 
 This packages works great with
 * [python-isort](https://atom.io/packages/python-isort) to reorder imports and

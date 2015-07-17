@@ -2,7 +2,7 @@
   "name": "python-iresolve",
   "main": "./lib/index",
   "version": "0.0.1",
-  "description": "A short description of your package",
+  "description": "Python import resolver",
   "keywords": [],
   "repository": "https://github.com/markbaas/atom-python-iresolve",
   "license": "MIT",

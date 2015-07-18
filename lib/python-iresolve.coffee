@@ -24,13 +24,11 @@ class PythonIresolve
     filePath = @getFilePath()
     new Promise (resolve, reject) ->
       data = null
-      console.log 'gole', atom.config.get 'python-iresolve.iresolveExecutablePath'
       process = new BufferedProcess
         command: atom.config.get 'python-iresolve.iresolveExecutablePath'
         args: ['--format=json', filePath]
         stdout: (out) -> data = out
         exit: =>
-          console.log 'exit', data
           resolve data
 
       process.onWillThrowError ({handle}) ->

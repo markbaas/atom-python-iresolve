@@ -14,7 +14,7 @@ class PythonIresolve
     editor = atom.workspace.getActiveTextEditor()
     if not editor?
       return false
-    return editor.getGrammar().name == 'Python'
+    return editor.getGrammar().name in ['Python', 'MagicPython']
 
   getFilePath: ->
     editor = atom.workspace.getActiveTextEditor()

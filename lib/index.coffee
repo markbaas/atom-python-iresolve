@@ -13,6 +13,7 @@ module.exports =
     pi = new PythonIresolve()
 
     atom.config.observe 'python-iresolve.checkOnSave', (value) ->
+
       atom.workspace.observeTextEditors (editor) ->
         if value == true
           editor._iresolve = editor.onDidSave -> pi.check()
